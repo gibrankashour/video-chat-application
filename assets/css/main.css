@@ -1,0 +1,113 @@
+
+.popup.hidden,
+.callBox.hidden {
+    display: none;
+}
+.popup,
+.callBox {
+    background: #334b584f;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup .call-container,
+.callBox .call-container {
+    padding: 15px 35px;
+    box-shadow: 0 4px 30px #0000001a;
+    border-radius: 10px;
+    background: #ffffff85;
+}
+.popup .call-container h2,
+.callBox .call-container h2 {
+    margin: 0 82px 0 20px;
+}
+.popup .call-container p {
+    margin: 8px 82px 0 20px;
+    font-size: 22px;
+    color: #a31111;
+}
+.popup .call-container button, 
+.callBox .call-container button {
+    margin-left: 25px;
+    cursor: pointer;
+    border: none;    
+    border-radius: 9px;
+}
+.popup .call-container button:hover , 
+.callBox .call-container button:hover {
+    background-color: rgb(199 199 199 / 55%);
+}
+.popup .call-container i,
+.callBox .call-container i {
+    font-size: 25px;
+    padding: 5px;
+}
+.popup div,
+.callBox div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup div i,
+.callBox div i {
+    font-size: 25px;
+    padding: 0 25px;
+}
+#end-call {
+    display: none;
+}
+#start-call {
+    display: block;
+}
+#end-call button i {
+    transform: rotate(135deg);
+}
+.call-icons .call-items .call-item a img {
+    width: 30px;
+    margin-top: -5px;
+}
+.call-icons .call-items .call-item a img.hidden {
+    display: none;
+}
+.chat-window,
+.page-wrapper {
+    background-color: #f0f0f0;
+}
+.user-video {
+    overflow: hidden;
+}
+.user-video img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+.my-video ul li {
+    min-width: 200px!important;
+}
+video {
+    width: 100%;
+    display: none;
+}
+video#localVideo {
+    border: 2px solid #FFF;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+    height: 100%;
+    min-height: 120px;
+    object-fit: cover;
+}
+.user-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
